@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Saumya Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Saumya</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">My Gallery</h1>
+            <p class="fade-in">Explore my collection of artworks</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="gallery-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="sketches">Sketches</button>
+                <button class="filter-btn" data-filter="photography">Photography</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" data-category="digital">
+                    <img src="https://picsum.photos/seed/gal1/600/800" alt="Digital Art 1">
+                    <div class="gallery-overlay">
+                        <h3>Abstract Vision</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="traditional">
+                    <img src="https://picsum.photos/seed/gal2/600/600" alt="Traditional Art 1">
+                    <div class="gallery-overlay">
+                        <h3>Sunset Glow</h3>
+                        <p>Traditional</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="sketches">
+                    <img src="https://picsum.photos/seed/gal3/600/900" alt="Sketch 1">
+                    <div class="gallery-overlay">
+                        <h3>Portrait Study</h3>
+                        <p>Sketch</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="photography">
+                    <img src="https://picsum.photos/seed/gal4/600/500" alt="Photography 1">
+                    <div class="gallery-overlay">
+                        <h3>Golden Hour</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="digital">
+                    <img src="https://picsum.photos/seed/gal5/600/700" alt="Digital Art 2">
+                    <div class="gallery-overlay">
+                        <h3>Neon Dreams</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="traditional">
+                    <img src="https://picsum.photos/seed/gal6/600/800" alt="Traditional Art 2">
+                    <div class="gallery-overlay">
+                        <h3>Floral Symphony</h3>
+                        <p>Traditional</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="sketches">
+                    <img src="https://picsum.photos/seed/gal7/600/600" alt="Sketch 2">
+                    <div class="gallery-overlay">
+                        <h3>Quick Studies</h3>
+                        <p>Sketch</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="photography">
+                    <img src="https://picsum.photos/seed/gal8/600/750" alt="Photography 2">
+                    <div class="gallery-overlay">
+                        <h3>City Lights</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="digital">
+                    <img src="https://picsum.photos/seed/gal9/600/600" alt="Digital Art 3">
+                    <div class="gallery-overlay">
+                        <h3>Cosmic Journey</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="traditional">
+                    <img src="https://picsum.photos/seed/gal10/600/850" alt="Traditional Art 3">
+                    <div class="gallery-overlay">
+                        <h3>Ocean Waves</h3>
+                        <p>Traditional</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="sketches">
+                    <img src="https://picsum.photos/seed/gal11/600/700" alt="Sketch 3">
+                    <div class="gallery-overlay">
+                        <h3>Character Design</h3>
+                        <p>Sketch</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="photography">
+                    <img src="https://picsum.photos/seed/gal12/600/600" alt="Photography 3">
+                    <div class="gallery-overlay">
+                        <h3>Nature's Beauty</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Saumya</h3>
+                    <p>Creating beauty, one brushstroke at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/saumya.chaurasia04" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saumya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <img src="" alt="Full size artwork" class="lightbox-img">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
